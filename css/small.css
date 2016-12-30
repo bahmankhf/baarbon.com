@@ -1,0 +1,786 @@
+@media screen and (min-width: 0px) and (max-width: 720px) {
+  /*General*/
+  body{
+    padding-bottom: 0;
+  }
+  .s-center{
+    width:100%;
+    clear: both;
+  }
+  .s-center > *{
+    margin-bottom: 7px;
+  }
+  .s-left {
+    width: calc(30% - 7px);
+    float: left;
+    clear: left;
+  }
+  .s-left > *{
+    margin-bottom: 7px;
+  }
+  .s-right{
+    float: right;
+    width: 70%;
+    clear: right;
+  }
+  .s-right > *{
+    margin-bottom: 7px;
+  }
+  .s-half{
+    float: right;
+    width: calc(50% - 3.5px);
+  }
+  .s-half:nth-child(odd){
+    margin-left: 7px;
+  }
+  .s-full{
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  .s-full:nth-child(odd){
+    margin-left: 0;
+  }
+  .s-third{
+    float: right;
+    width:calc(33.3330% - 13.333px);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .s-quarter{
+    float: right;
+    width: 25%
+  }
+  /*slider*/
+  .slider .handle {
+    width: 100%;
+    height: 50px;
+    padding: 0;
+    background: transparent;
+    border-radius: 0 !important;
+    top: calc(50% - 40px) !important;
+
+  }
+  .slider .handle li,
+  .slider .handle li.active{
+    display: none ;
+  }
+  .slider .handle li.next,
+  .slider .handle li.prev{
+    display: block;
+    background: transparent;
+    width: 50%;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    color: white;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: right;
+    border-radius: 0 !important;
+    margin: 0;
+    text-indent: 10px;
+
+  }
+  .slider .handle li.prev{
+    text-align: left;
+    right: auto;
+    left: 0;
+
+  }
+  .slider a {
+    padding: 50px 5px 0 5px;
+    height: calc(50% - 10px);
+    width: calc(100% - 10px);
+    font-size: 12px;
+    font-weight: 200;
+  }
+  .slider a p {
+    line-height: 20px;
+  }
+  .btn {
+    width: 98% !important;
+    display: block;
+    margin: 0 auto 5px auto !important;
+  }
+
+  /*form*/
+  legend {
+    width: calc(100% - 3px);
+  }
+  form .box p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  label {
+    margin-bottom: 5px;
+  }
+  label > *{
+    margin-right: 0;
+    margin-top: 20px;
+    min-height: 30px;
+    line-height: 30px;
+  }
+  label.error {
+    margin-top: 35px;
+    margin-bottom: 5px;;
+  }
+  label.error *{
+    background: lightsalmon !important;
+    color: white !important;
+  }
+  label .errorMessage {
+    bottom: 50px;
+    height: 30px;
+  }
+  label.error .label {
+    color: salmon;
+    background: transparent;
+  }
+  label .label {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    min-height: 0%;
+    margin-top: 0;
+    background: transparent;
+  }
+  label .label:after {
+    width: 100%;
+    bottom: -30px;
+
+  }
+  label input[type="text"],
+  label input[type="email"],
+  label input[type="password"],
+  label input[type="search"],
+  label select,
+  label textarea{
+    width: 100%;
+  }
+  label textarea {
+    padding: 5px;
+    width: calc(100% - 10px);
+  }
+  label input[type="checkbox"] {
+    margin-left: 10%;
+    margin-right: 0;
+    margin-top: 10px;
+    float: left;
+
+  }
+
+  label input[type="text"]:focus + .label,
+  label input[type="email"]:focus + .label,
+  label input[type="password"]:focus + .label,
+  label input[type="search"]:focus + .label,
+  label input[type="checkbox"]:checked + .label,
+  label select:focus + .label,
+  label textarea:focus + .label{
+    background: whitesmoke;
+  }
+
+  label input[type="checkbox"] + .label {
+    transition: 0s;
+    position: relative;
+    float: right;
+    height: 50px;
+    line-height: 50px;
+    width: 80%;
+  }
+  label input[type="checkbox"]:checked + .label{
+    transition: 0s;
+  }
+  label input[type="checkbox"] + .label:after{
+    width: 125%;
+    bottom: 0;
+    transition: 0s;
+  }
+  label input[type="checkbox"]:checked + .label:after{
+    width: 125%;
+    transition: 0s;
+  }
+  label textarea + .label:after{
+    bottom: -130px;
+  }
+  input[type="submit"],
+  input[type="button"],
+  input[type="reset"] {
+    width: 100%;
+  }
+
+
+
+
+
+
+
+
+  h2 {
+    height: 50px;
+    line-height: 20px;
+    font-size: 16px;
+  }
+  /*header*/
+  header, .ie-header {
+    margin-top: 0px;
+    margin-bottom: 60px;
+  }
+  #topbar {
+    height: 50px;
+    border-radius: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: visible;
+  }
+  #headerlogo li {
+    height: 50px;
+  }
+  #headerlogo .logo a {
+    height: 50px;
+    padding: 0;
+    width: 110px;
+  }
+  #headerlogo .title{
+    position:fixed;
+    top: -200px;
+  }
+  nav, #headertools {
+    display: none;
+  }
+  #menu {
+    position: fixed;
+    left: -250px;
+    top: 50px;
+    height: calc(100% - 50px);
+    width: 250px;
+    z-index: 999999;
+    transition: 1s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition: .5s;
+    background: white;
+  }
+  #menucover {
+    content: "";
+    width: 250px;
+    height: 50px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: block;
+    background: white;
+    transition: 1s;
+    z-index: 999999;
+  }
+  #menucover.active {
+    background: #ebe4db;
+
+  }
+  #menu.active {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  #showmenu, #hidemenu{
+    z-index: 9999999;
+    position: fixed !important;
+    top: 0;
+    left: -150px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    font-size: 35px;
+    display: block;
+    transform: rotate(-220deg);
+    transition: transform .5s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  }
+  #hidemenu{
+    transform: rotate(220deg);
+  }
+
+  #hidemenu.active{
+    left: 0;
+    transform: rotate(0deg);
+  }
+  #showmenu.active{
+    transform: rotate(0deg);
+    left: 0;
+  }
+
+  #dimmer {
+    opacity: 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: hsla(17, 22%, 25%, 0.71);
+    background: hsla(17, 22%, 15%, 0.8);
+    transition: opacity 2s;
+  }
+  #dimmer.active {
+    opacity: 1;
+  }
+
+  nav.menu, #headertools.menu {
+    display: block;
+    float: right;
+    margin-right: 10px;
+    margin-top: 0;
+    width: 230px;
+    overflow-x: hidden;
+    padding: 0;
+    border-top: 1px solid #ebe4db;
+    height: auto !important;
+    border-left: 0;
+    position: relative;
+  }
+  #headertools.menu{
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .ie-header #headertools button {
+    width: 47px;
+  }
+  #headertools button[name="search"],#headertools button[name="close"] {
+    margin-top: 5px;
+    height: 40px;
+  }
+  #headertools button[name="profile"] {
+    width: 100%;
+    text-align: right;
+    text-indent: 10px;
+  }
+  #headertools button[name="profile"]:after {
+    content: "حساب کاربری";
+    color: #9f816e;
+    font-family: IRANSans;
+    font-size: 14px;
+    line-height: 50px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 50px;
+  }
+  .topbarSearch {
+    width: 180px !important;
+    display: block !important;
+    background-color: #f2f2f2 !important;
+    float: left !important;
+    position: relative !important;
+    margin-top: 5px !important;
+    height: 40px !important;
+  }
+  .topbarSearch:focus {
+    width: 180px !important;
+  }
+  nav li {
+    border-bottom: 1px solid #EBE4DB;
+    border-right: 0;
+    width: 100% !important;
+    display: block;
+  }
+  nav a {
+    width: 100%;
+    display: block;
+  }
+
+  /*Footer*/
+  footer, .ie-footer {
+    display: none;
+  }
+  #footersitemap, #footersocials {
+    width: 230px;
+    float: right;
+    margin: 0;
+    border-left: 0;
+    height: auto !important;
+    padding: 10px;
+    padding-left: 0;
+    box-sizing: content-box;
+  }
+  #footersitemap {
+    margin-top: 100px;
+  }
+  #footersitemap:after {
+    content: "بیشتر ببینید:";
+    position: absolute;
+    display: block;
+    right: 0;
+    top: -18px;
+    color: #9f816e;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    font-size: 14px;
+  }
+  #footersitemap li {
+    width: 100%;
+    background: hsl(0, 0%, 95%);
+    margin-bottom: 3px;
+  }
+  #footersitemap a {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    border-bottom: 0;
+    color: #9f816e;
+    border-radius: 5px;
+  }
+  #footersitemap a:hover {
+    border-bottom: 0;
+    background: rgba(159, 129, 110, 0.27);
+  }
+  #footersocials span {
+    color: #9f816e;
+    font-size: 14px;
+  }
+  #footersocials a {
+    background: #e6e6e6;
+  }
+  /*portal page*/
+  /*portal page - slider*/
+  #homePage.slider {
+    padding-bottom: 75%;
+  }
+  /*portal page - popularbazaar and newbazaar and newmagazine*/
+  #popularbazaar .wrap,#newbazaar .wrap {
+    width: 95%;
+    margin: 0 2.5%;
+    overflow-y: auto;
+  }
+  #popularbazaar ul,#newbazaar ul {
+    width: 1550px;
+    height: 100px;
+  }
+  #popularbazaar ul {
+    height: 170px;
+  }
+  #popularbazaar li,#newbazaar li {
+    width: 150px;
+    float: right;
+    margin-left: 5px;
+    height: 80px;
+    border: 0;
+  }
+  #popularbazaar li {
+    height: 150px;
+  }
+  #popularbazaar li a, #newbazaar li a {
+    border-radius: 5px !important;
+    overflow: hidden !important;
+  }
+  #newmagazine li a:hover, #popularbazaar li a:hover, #newbazaar li a:hover {
+    transform: scale(1);
+    transition: transform .3s;
+    box-shadow: 0 25px 30px transparent;
+    background-color: whitesmoke;
+  }
+  html.touchevents #newmagazine li a:hover, html.touchevents #popularbazaar li a:hover, html.touchevents #newbazaar li a:hover {
+    transform: scale(1);
+    transition: transform .3s;
+    box-shadow: 0 25px 30px transparent;
+    background-color: whitesmoke;
+  }
+  html.touchevents #newmagazine li a:focus, html.touchevents #popularbazaar li a:focus, html.touchevents #newbazaar li a:focus {
+    transform: scale(1);
+    transition: transform .3s;
+    box-shadow: 0 25px 30px transparent;
+    background-color: white;
+  }
+  #popularbazaar h3, #newbazaar h3 {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    width: 100%;
+
+  }
+  #popularbazaar span, #newbazaar span {
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+  }
+  #popularbazaar .thumbnail {
+    width: 150px;
+    height: 70px;
+    border-radius:5px 5px 0 0;
+  }
+  /*Director*/
+  .director h2{
+    font-size: 15px;
+    line-height: 50px !important;
+    margin-bottom: 15px;
+  }
+  .director > a {
+    width: calc(50% - 2.5px);
+    height: 35px;
+    line-height: 35px !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #8b695a;
+  }
+  .director li a{
+    line-height: 30px;
+  }
+  /* submit new ad*/
+  .submitad {
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 900 !important;
+  }
+  .submitad a{
+    font-weight: 900 !important;
+  }
+  /*Bazaar Page - View tools*/
+
+  #filterbar button[name=grid],#filterbar button[name=list] {
+    display: none !important;
+  }
+
+  /*Bazaar Page - ads list*/
+  #ads .ad.s-full {
+    float: none;
+    display: inline-block;
+    position: relative;
+    min-height: auto;
+    padding-bottom:  120px;
+    margin-bottom: 7px;
+    transition: 0s;
+  }
+  #ads .ad.s-full section:hover {
+    transform: scale(1) !important;
+    box-shadow: none !important;
+    z-index: 99 !important;
+  }
+  html.touchevents .ad.s-full a:hover {
+    transform: scale(1) !important;
+    box-shadow: none !important;
+    z-index: 99 !important;
+  }
+  #ads .ad.s-full section > *{
+    transition: 0s;
+    float: right;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    opacity: 1;
+    text-align: right;
+    text-align-last: right;
+    -moz-text-align-last: right;
+    line-height: normal;
+  }
+  #ads .ad.s-full .thumbnail {
+    width: 25%;
+    height: 100%;
+    background-color: whitesmoke !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  #ads .ad.s-full h2 {
+    width: 71%;
+    margin-right: 2%;
+    padding: 0;
+    display: table;
+    height: 60%;
+  }
+  #ads .ad.s-full h2 span{
+    display: table-cell;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #664d42;
+    font-size: 16px;
+  }
+  #ads .ad.s-full button {
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    float: none;
+    position: absolute;
+    left: 2%;
+    top: 60%;
+    width: 12%;
+    height: 40%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0s;
+  }
+  #ads .ad.s-full .price {
+    width: 36%;
+    margin-right: 2%;
+    height: 40%;
+    display: table;
+    color: #664d42;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  #ads .ad.s-full .price span{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #ads .ad.s-full .date {
+    width: 21%;
+    padding-right: 0;
+    height: 40%;
+    display: table;
+    color: #664d42;
+    font-size: 12px;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+  }
+  #ads .ad.s-full .date:after {
+    content: "";
+    height: 60%;
+    border-right: 1px solid #ebe4db;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    display: block;
+  }
+  #ads .ad.s-full .date:before {
+    content: "";
+    height: 60%;
+    border-right: 1px solid #ebe4db;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    display: block;
+  }
+  #ads .ad.s-full .date span{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /*ad page*/
+  #adContact ul{
+    text-align: center;
+  }
+  #adContact li {
+
+    line-height: 30px;
+    display: inline-block;
+  }
+
+  #adContact li a {
+    height: 30px;
+
+  }
+  #adContact li span:first-child {
+    width: 30px;
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 5px;
+  }
+  #adContact li span:last-child {
+    margin-left: 0;
+    font-size: 12px;
+  }
+  /*magazine page*/
+  #magazinPage > article > a {
+
+    padding-bottom: 5px;
+
+  }
+  .article .thumbnail {
+    width: calc(100% - 10px);
+  }
+  .article h1, .article .summary {
+    float: right;
+    width: calc(100% - 10px);
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+  .article .time, .article .comments, .article .views {
+    clear: none;
+    width: 35px;
+    margin: 0;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 0;
+    border-left: 1px solid whitesmoke;
+    padding-right: 20px;
+    padding-left: 5px;
+  }
+  .article .time {
+    width: auto;
+  }
+  /*article page*/
+  #article > * , #comments > *, #commenting > *{
+    padding: 0;
+    width: 95%;
+    margin: 0 2.5% !important;
+  }
+  /*profile pages*/
+  #profile h2{
+    text-align: center;
+  }
+  /*message pages*/
+  header.msg {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    right: auto;
+    left: auto;;
+    top: auto;
+    margin: 10px 0 0 0;
+    transform: translateY(0);
+  }
+  header.msg img {
+    height: 90px;
+  }
+  header.msg a.return {
+    position: absolute;
+    left: 0;
+    top: 99px;
+    line-height: 50px;
+    font-size: 20px;
+    padding-left: 35px;
+    border-top: 1px solid #ebe4db;
+    width: calc(100% - 20px);
+    padding: 0 10px !important;
+    background: hsl(0, 0%, 98%);
+  }
+  main.msg {
+    position: relative;
+    width: 100%;
+    right: auto;
+    left: auto;
+    top: auto;
+    transform: translateY(0);
+  }
+  main.msg .symbol {
+    text-align: center;
+  }
+  footer.msg {
+    position: relative;
+    width: 100%;
+    right: auto;
+    left: auto;
+    top: auto;
+    display: block;
+    transform: translateY(0);
+  }
+  footer.msg nav {
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}

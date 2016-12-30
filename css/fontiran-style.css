@@ -1,0 +1,27 @@
+body {
+      font-family: IRANSans, 'Material Icons';
+	font-weight: 300;
+	direction: rtl;
+	background-color: #E2E2E2;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6,input, textarea, button, select {
+      font-family: IRANSans, 'Material Icons';
+}
+h1 {
+	font-weight: bold;
+}
+blockquote {
+	font-weight: 500;
+	padding: 10px;
+	border: 1px dashed #666666;
+}
+*:after{
+  font-family: IRANSans, 'Material Icons';
+
+}
+.icon {
+    font-family: 'Material Icons' !important;
+    font-size: 20px;
+    color: #9f816e;
+}

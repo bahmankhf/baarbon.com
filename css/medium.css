@@ -1,0 +1,471 @@
+@media screen and (min-width: 720px) and (max-width: 960px) {
+  /*General*/
+  .m-center{
+    width:100%;
+    clear: both;
+  }
+  .m-center > *{
+    margin-bottom: 10px;
+  }
+  .m-left {
+    width: calc(30% - 10px);
+    float: left;
+    clear: left;
+  }
+  .m-left > *{
+    margin-bottom: 10px;
+  }
+  .m-right{
+    float: right;
+    width: 70%;
+    clear: right;
+  }
+  .m-right > *{
+    margin-bottom: 10px;
+  }
+  .m-half{
+    float: right;
+    width: calc(50% - 5px);
+  }
+  .m-half:nth-child(odd){
+    margin-left: 10px;
+  }
+  .m-full{
+    float: none;
+    display: block;
+    width: 100%;
+  }
+  .m-full:nth-child(odd){
+    margin-left: 0;
+  }
+  .m-third{
+    float: right;
+    width:calc(33.3330% - 13.333px);
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .m-quarter{
+    float: right;
+    width: 25%
+  }
+  .btn {
+    width: 30% !important;
+    }
+  .slider .handle li.active {
+    height: 50px;
+  }
+  .slider a {
+      font-size: 13px;
+      font-weight: 400;
+  }
+  .slider a p {
+      line-height: 23px;
+  }
+  /*side Posts*/
+  .sidePosts li p,.sidePosts li h2  {
+      float: left;
+      width: calc(50% - 10px);
+      height: 100px;
+      padding: 0;
+      margin-left: 5px !important;
+  }
+.sidePosts .thumbnail {
+    float: right;
+    width: 50%;
+    height: 100px;
+}
+/*form*/
+legend {
+    width: calc(50% - 3px);
+}
+form .box p {
+    font-size: 13px;
+    line-height: 21px;
+}
+label {
+    margin-bottom: 5px;
+}
+label > *{
+  margin-right: 40%;
+}
+label .label {
+    width: 40%;
+}
+label .label:after {
+    width: 250%;
+}
+label input[type="text"],
+label input[type="email"],
+label input[type="password"],
+label input[type="search"],
+label select,
+label textarea{
+  width: 60%;
+    font-size: 14px;
+}
+label input[type="checkbox"] {
+    margin-right: 42%;
+}
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+    width: 40%;
+}
+
+
+
+  h2 {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+  /*header*/
+  header, .ie-header {
+    margin-top: 20px;
+  }
+  #topbar {
+    height: 120px;
+  }
+  #headerlogo {
+    float: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  #headerlogo li {
+    margin-left: 0px;
+    float: none;
+    display: block;
+    height: auto;
+  }
+  #headerlogo .logo {
+    width: 180px;
+  }
+  #headerlogo .logo a {
+    height: 80px;
+    width: 170px;
+  }
+  #headerlogo .title h1 {
+    margin-top: 0px;
+    line-height: 15px;
+    height: 35px;
+    margin-right: 75px;
+    width: 580px;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  nav, #headertools {
+    margin-top: 35px;
+  }
+  nav a {
+    width: 80px;
+  }
+  .topbarSearch:focus {
+    width: 200px !important;
+  }
+  /*Footer*/
+  #footersitemap a {
+    font-size: 14px;
+  }
+  #footersocials a {
+    transform: scale(0.8);
+  }
+  /*portal page*/
+  /*portal page - popularbazaar and newbazaar*/
+  #popularbazaar .thumbnail {
+    width: 15%;
+  }
+  #newmagazine .thumbnail {
+    height: 90px;
+  }
+  #popularbazaar h3, #popularbazaar span{
+    width: 85%;
+  }
+  /*portal page - Director*/
+  .director > a {
+    width: 100%;
+    height: 35px;
+    line-height: 35px !important;
+  }
+  .director.singleLine > a{
+    font-size: 15px !important;
+  }
+  /* submit new ad*/
+  .submitad {
+    padding: 40px 0;
+    font-size: 14px;
+    font-weight: 900 !important;
+  }
+  .submitad a{
+    font-weight: 900 !important;
+  }
+  /*Bazaar Page - ads list*/
+  #ads .ad.m-half {
+    float: none;
+    display: inline-block;
+    position: relative;
+    min-height: auto;
+    padding-bottom:  calc(50% - 5px);
+    transition: 0s;
+    margin-left: 0;
+  }
+  #ads .ad.m-full {
+    float: none;
+    display: inline-block;
+    position: relative;
+    min-height: auto;
+    padding-bottom:  90px;
+    margin-bottom: 5px;
+    transition: 0s;
+  }
+  #ads .ad.m-half section:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px #664d42;
+    z-index: 99 !important;
+  }
+  #ads .ad.m-full section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px #664d42;
+    z-index: 99 !important;
+  }
+  html.touchevents .ad.m-half section:hover,  html.touchevents .ad.m-full section:hover {
+    transform: scale(1) !important;
+    box-shadow: none !important;
+    z-index: 99 !important;
+  }
+  #ads .ad.m-half section > *{
+    transition: 0s;
+    float: right;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    opacity: .8;
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    line-height: normal;
+  }
+  #ads .ad.m-full section > *{
+    transition: 0s;
+    float: right;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    opacity: .8;
+    text-align: right;
+    text-align-last: right;
+    -moz-text-align-last: right;
+    line-height: normal;
+  }
+  #ads .ad.m-half .thumbnail {
+    width: 100%;
+    height: 60%;
+    background-color: whitesmoke !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  #ads .ad.m-full .thumbnail {
+    width: 25%;
+    height: 100%;
+    background-color: whitesmoke !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+  #ads .ad.m-half h2{
+    width: 95%;
+    margin: 0 2.5%;
+    padding: 0;
+    display: table;
+    height: 20%;
+  }
+  #ads .ad.m-full h2 {
+    width: 71%;
+    margin-right: 2%;
+    padding: 0;
+    display: table;
+    height: 60%;
+  }
+  #ads .ad.m-half h2 span{
+    display: table-cell;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #664d42;
+    font-size: 17px;
+  }
+  #ads .ad.m-full h2 span{
+    display: table-cell;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #664d42;
+    font-size: 19px;
+  }
+  #ads .ad.m-half button {
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    float: none;
+    position: absolute;
+    left: 10px;
+    top: calc(60% - 20px);
+    width: 40px;
+    height: 40px;
+    background: white;
+    opacity: 1;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    transform: scale(0);
+    box-shadow: 0 4px 7px rgba(102, 77, 66, 0.54);
+    transition: transform .3s;
+    cursor: pointer;
+  }
+  html.touchevents .ad.m-half button{
+    transform: scale(1) !important;
+  }
+  #ads .ad.m-full button {
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    float: none;
+    position: absolute;
+    left: 2%;
+    top: 60%;
+    width: 7%;
+    height: 40%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: 0s;
+  }
+  #ads .ad.m-half section:hover button{
+    transform: scale(1);
+  }
+  #ads .ad.m-half .price {
+    width: 60%;
+    margin-right: 2.5%;
+    height: 20%;
+    display: table;
+    color: #664d42;
+    font-size: 13px;
+    font-weight: 300;
+  }
+  #ads .ad.m-full .price {
+    width: 41%;
+    margin-right: 2%;
+    height: 40%;
+    display: table;
+    color: #664d42;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  #ads .ad.m-half .price span{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #ads .ad.m-full .price span{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #ads .ad.m-half .date {
+    width: 30%;
+    padding-right: 5%;
+    margin-left:2.5%;
+    height: 20%;
+    display: table;
+    color: #664d42;
+    font-size: 13px;
+    font-weight: 300;
+    position: relative;
+  }
+  #ads .ad.m-full .date {
+    width: 22%;
+    padding-right: 0;
+    height: 40%;
+    display: table;
+    color: #664d42;
+    font-size: 13px;
+    font-weight: 300;
+    position: relative;
+    text-align: center;
+    text-align-last: center;
+    -moz-text-align-last: center;
+  }
+  #ads .ad.m-half .date:after {
+    content: "";
+    height:40%;
+    border-right: 1px solid  #ebe4db;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    display: block;
+  }
+  #ads .ad.m-full .date:after {
+    content: "";
+    height: 60%;
+    border-right: 1px solid #ebe4db;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    display: block;
+  }
+  #ads .ad.m-full .date:before {
+    content: "";
+    height: 60%;
+    border-right: 1px solid #ebe4db;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    display: block;
+  }
+  #ads .ad.m-half .date span{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  #ads .ad.m-full .date span{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /*ad page*/
+  #adContact li {
+    line-height: 30px;
+  }
+  #adContact li a {
+    height: 30px;
+
+  }
+  #adContact li span:first-child {
+    width: 30px;
+    font-size: 17px;
+    line-height: 25px;
+    padding-top: 5px;
+  }
+  #adContact li span:last-child {
+    margin-left: 0;
+    font-size: 12px;
+  }
+  /*message pages*/
+  header.msg {
+    width: 700px;
+    right: calc(50% - 350px);
+    left: calc(50% - 350px);
+    
+  }
+  main.msg {
+    width: 700px;
+    right: calc(50% - 350px);
+    left: calc(50% - 350px);
+  }
+  footer.msg {
+    width: 700px;
+    right: calc(50% - 350px);
+    left: calc(50% - 350px);
+  }
+
+
+
+
+}
